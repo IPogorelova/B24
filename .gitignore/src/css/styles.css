@@ -1,0 +1,131 @@
+/* Fonts
+@font-face {
+    font-family: 'Roboto';
+    url('fonts/Roboto/Roboto-Black.ttf') format('truetype'),
+    url('fonts/Roboto/Roboto-Bold.ttf') format('truetype'),
+    url('fonts/Roboto/Roboto-Medium.ttf') format('truetype'),
+    url('fonts/Roboto/Roboto-Regular.ttf') format('truetype'),
+    url('fonts/Roboto/Roboto-Light.ttf') format('truetype'),
+    url('fonts/Roboto/Roboto-Thin.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto Mono';
+url('fonts/Roboto_Mono/RobotoMono-Bold.ttf') format('truetype'),
+url('fonts/Roboto_Mono/RobotoMono-Medium.ttf') format('truetype'),
+url('fonts/Roboto_Mono/RobotoMono-Regular.ttf') format('truetype'),
+url('fonts/Roboto_Mono/RobotoMono-Light.ttf') format('truetype'),
+url('fonts/Roboto_Mono/RobotoMono-Thin.ttf') format('truetype');
+}*/
+
+
+
+/* General settings */
+BODY {
+    background-color: #fff;
+    background-image: url(../../src/images/bg-above.svg), url(../../src/images/bg-under.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 100vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin: 0;
+    overflow-x: hidden;
+
+}
+
+.content {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+}
+
+.inner {
+    width: 90%;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a, h1 {
+    font-family: 'Roboto Mono', monospace;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.11;
+    letter-spacing: normal;
+}
+
+ul li {
+    list-style: none;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: 0.5px;
+}
+
+img {
+    width: fit-content;
+}
+
+.top-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5%;
+}
+
+.menu-top {
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+    margin-top: 9px;
+
+    ul {
+        margin-left: -1.5%;
+        margin-right: -1.5%;
+    }
+
+    a {
+        margin: auto;
+    }
+}
+
+.horiz-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.vert-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.main-title {
+    margin-top: 25%;
+    margin-bottom: 28%;
+    font-size: 65px;
+    font-weight: 500;
+    line-height: 1.23;
+}
+
+#people-img {
+    margin-top: 5%;
+}
