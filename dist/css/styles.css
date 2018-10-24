@@ -357,6 +357,67 @@ input, textarea {
 
 
 
+#offers-mob {
+    display: none;
+    margin-top: 9%;
+}
+
+
+
+#offers-mob a, #offers-mob span {
+        font-size: 22px;
+    }
+
+
+
+#offers-mob p {
+        margin-top: 4%;
+    }
+
+
+
+#offers-mob .close-descr {
+        display: none;
+    }
+
+
+
+#offers-mob #mob-offer-1.active .close-descr {
+            display: inline;
+        }
+
+
+
+#offers-mob #mob-offer-1.active .open-descr {
+            display: none;
+        }
+
+
+
+#offers-mob #mob-offer-2.active .close-descr {
+            display: inline;
+        }
+
+
+
+#offers-mob #mob-offer-2.active .open-descr {
+            display: none;
+        }
+
+
+
+#offers-mob #mob-offer-3.active .close-descr {
+            display: inline;
+        }
+
+
+
+#offers-mob #mob-offer-3.active .open-descr {
+            display: none;
+        }
+
+
+
 .offers {
     width: 60%;
     margin-left: auto;
@@ -420,29 +481,81 @@ input, textarea {
 
 
 
+.offers .offers-cont .texts .offer-descr .close-descr {
+                    display: none;
+                }
+
+
+
+.offers .offers-cont .texts .offer-descr .open-descr {
+                    display: inline;
+                }
+
+
+
+.offers .offers-cont .texts .offer-descr #descr-1,
+                .offers .offers-cont .texts .offer-descr #descr-2,
+                .offers .offers-cont .texts .offer-descr #descr-3 {
+                    display: none;
+                }
+
+
+
+.offers .offers-cont .texts .offer-descr #offer-1.active .close-descr {
+                        display: inline;
+                    }
+
+
+
+.offers .offers-cont .texts .offer-descr #offer-1.active .open-descr {
+                        display: none;
+                    }
+
+
+
+.offers .offers-cont .texts .offer-descr #offer-2.active .close-descr {
+                        display: inline;
+                    }
+
+
+
+.offers .offers-cont .texts .offer-descr #offer-2.active .open-descr {
+                        display: none;
+                    }
+
+
+
+.offers .offers-cont .texts .offer-descr #offer-3.active .close-descr {
+                        display: inline;
+                    }
+
+
+
+.offers .offers-cont .texts .offer-descr #offer-3.active .open-descr {
+                        display: none;
+                    }
+
+
+
 .offers .offers-cont .texts a {
                 font-size: 22px;
                 font-stretch: normal;
                 line-height: 1.32;
                 letter-spacing: -0.8px;
+                cursor: pointer;
+
             }
 
 
 
 .offers .offers-cont .texts a span {
                     font-size: 22px;
-                }
-
-
-
-.offers .offers-cont .texts a .close-descr {
-                    display: none;
+                    display: inline;
                 }
 
 
 
 .offers .offers-cont .texts p {
-                display: none;
                 margin-top: 15px;
                 font-family: Roboto-Light, sans-serif;
                 font-size: 16px;
@@ -892,6 +1005,48 @@ footer .submit-btn:hover {
                         font-size: 20px;
                     }
 
+/*===== What we offer =====*/
+
+.offers {
+    width: 90%;
+}
+
+    .offers h2 {
+        font-size: 25px;
+    }
+
+    #offers-mob {
+        display: block;
+        width: 100%;
+
+    }
+
+        #offers-mob img {
+            display: none;
+        }
+
+        #offers-mob .offer-descr {
+            padding-bottom: 25px;
+            margin-bottom: 25px;
+            border-bottom: solid 1px rgba(38, 17, 201, 0.2);
+        }
+
+            #offers-mob .offer-descr p {
+                display: none;
+            }
+
+        #offers-mob .offer-descr:first-child {
+            padding-top: 25px;
+            border-top: solid 1px rgba(38, 17, 201, 0.2);
+        }
+
+            #offers-mob .offer-descr:first-child p {
+                display: block;
+            }
+
+    #offers-desktop{
+        display: none;
+    }
 
 /*===== Our advantages =====*/
 
@@ -1066,6 +1221,39 @@ footer .submit-btn:hover {
                 }
 
 
+/*===== What we offer =====*/
+
+#offers-mob {
+    display: block;
+
+
+}
+
+    #offers-mob .offer-descr {
+        padding-bottom: 25px;
+        margin-bottom: 25px;
+        border-bottom: solid 1px rgba(38, 17, 201, 0.2);
+    }
+
+        #offers-mob .offer-descr p {
+            display: none;
+        }
+
+        #offers-mob .offer-descr:first-child p {
+            display: block;
+        }
+
+    #offers-mob .offer-descr:last-child {
+        border-bottom: none;
+    }
+
+#offers-desktop{
+    display: none;
+}
+
+
+
+
 /*===== Our advantages =====*/
 
         .advantages #bg-bott-1920 {
@@ -1165,6 +1353,14 @@ footer .submit-btn:hover {
                     position: relative;
                     top: 465px;
                 }
+
+
+/*===== What we offer =====*/
+
+    .offers {
+        width: 100%;
+    }
+
 
 
 /*===== Our advantages =====*/
@@ -1272,6 +1468,13 @@ footer .submit-btn:hover {
                 }
 
 
+/*===== What we offer =====*/
+
+    .offers {
+        width: 80%;
+    }
+
+
     /*===== Our advantages =====*/
 
         .advantages #bg-bott-1920 {
@@ -1325,6 +1528,14 @@ footer .submit-btn:hover {
         max-width: 115%;
         margin-bottom: -14%;
         margin-left: -10%;
+    }
+
+
+
+/*===== What we offer =====*/
+
+    .offers {
+        width: 80%;
     }
 
 

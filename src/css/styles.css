@@ -273,6 +273,56 @@ input, textarea {
 
 /*===== What we offer =====*/
 
+#offers-mob {
+    display: none;
+    margin-top: 9%;
+
+    a, span {
+        font-size: 22px;
+    }
+
+    p {
+        margin-top: 4%;
+    }
+
+    .close-descr {
+        display: none;
+    }
+
+    #mob-offer-1.active {
+
+        .close-descr {
+            display: inline;
+        }
+
+        .open-descr {
+            display: none;
+        }
+    }
+
+    #mob-offer-2.active {
+
+        .close-descr {
+            display: inline;
+        }
+
+        .open-descr {
+            display: none;
+        }
+    }
+
+    #mob-offer-3.active {
+
+        .close-descr {
+            display: inline;
+        }
+
+        .open-descr {
+            display: none;
+        }
+    }
+}
+
 .offers {
     width: 60%;
     margin-left: auto;
@@ -313,6 +363,53 @@ input, textarea {
                 padding-bottom: 5%;
                 margin-bottom: 5%;
                 border-bottom: solid 1px rgba(38, 17, 201, 0.2);
+
+                .close-descr {
+                    display: none;
+                }
+
+                .open-descr {
+                    display: inline;
+                }
+
+                #descr-1,
+                #descr-2,
+                #descr-3 {
+                    display: none;
+                }
+
+                #offer-1.active {
+
+                    .close-descr {
+                        display: inline;
+                    }
+
+                    .open-descr {
+                        display: none;
+                    }
+                }
+
+                #offer-2.active {
+
+                    .close-descr {
+                        display: inline;
+                    }
+
+                    .open-descr {
+                        display: none;
+                    }
+                }
+
+                #offer-3.active {
+
+                    .close-descr {
+                        display: inline;
+                    }
+
+                    .open-descr {
+                        display: none;
+                    }
+                }
             }
 
             a {
@@ -320,18 +417,16 @@ input, textarea {
                 font-stretch: normal;
                 line-height: 1.32;
                 letter-spacing: -0.8px;
+                cursor: pointer;
 
                 span {
                     font-size: 22px;
+                    display: inline;
                 }
 
-                .close-descr {
-                    display: none;
-                }
             }
 
             p {
-                display: none;
                 margin-top: 15px;
                 font-family: Roboto-Light, sans-serif;
                 font-size: 16px;
@@ -686,6 +781,48 @@ footer {
         }
     }
 
+/*===== What we offer =====*/
+
+.offers {
+    width: 90%;
+
+    h2 {
+        font-size: 25px;
+    }
+}
+
+    #offers-mob {
+        display: block;
+        width: 100%;
+
+        img {
+            display: none;
+        }
+
+        .offer-descr {
+            padding-bottom: 25px;
+            margin-bottom: 25px;
+            border-bottom: solid 1px rgba(38, 17, 201, 0.2);
+
+            p {
+                display: none;
+            }
+        }
+
+        .offer-descr:first-child {
+            padding-top: 25px;
+            border-top: solid 1px rgba(38, 17, 201, 0.2);
+
+            p {
+                display: block;
+            }
+        }
+
+    }
+
+    #offers-desktop{
+        display: none;
+    }
 
 /*===== Our advantages =====*/
 
@@ -865,6 +1002,42 @@ footer {
     }
 
 
+/*===== What we offer =====*/
+
+#offers-mob {
+    display: block;
+
+    .offer-descr {
+        padding-bottom: 25px;
+        margin-bottom: 25px;
+        border-bottom: solid 1px rgba(38, 17, 201, 0.2);
+
+        p {
+            display: none;
+        }
+    }
+
+    .offer-descr:first-child {
+
+        p {
+            display: block;
+        }
+    }
+
+    .offer-descr:last-child {
+        border-bottom: none;
+    }
+
+
+}
+
+#offers-desktop{
+    display: none;
+}
+
+
+
+
 /*===== Our advantages =====*/
 
     .advantages {
@@ -972,6 +1145,14 @@ footer {
             }
         }
     }
+
+
+/*===== What we offer =====*/
+
+    .offers {
+        width: 100%;
+    }
+
 
 
 /*===== Our advantages =====*/
@@ -1083,6 +1264,13 @@ footer {
     }
 
 
+/*===== What we offer =====*/
+
+    .offers {
+        width: 80%;
+    }
+
+
     /*===== Our advantages =====*/
 
     .advantages {
@@ -1138,6 +1326,14 @@ footer {
         max-width: 115%;
         margin-bottom: -14%;
         margin-left: -10%;
+    }
+
+
+
+/*===== What we offer =====*/
+
+    .offers {
+        width: 80%;
     }
 
 

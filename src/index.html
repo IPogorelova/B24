@@ -8,6 +8,9 @@
     <link rel="stylesheet" media="all" href="../dist/css/animate.css">
     <link rel="stylesheet" type="text/css" href="../dist/css/reset_css.css">
     <link rel="stylesheet" type="text/css" href="../dist/css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script>new WOW().init();</script>
 </head>
@@ -62,7 +65,8 @@
         <div class="horiz-container">
             <div class="vert-container">
                 <h2>What is Bitrix24?</h2>
-                <p class="blue-text">Bitrix24 is&nbsp;a&nbsp;complete suite of&nbsp;social collaboration, communication and management tools for your&nbsp;team.</p>
+                <p class="blue-text">Bitrix24 is&nbsp;a&nbsp;complete suite of&nbsp;social collaboration, communication
+                    and management tools for your&nbsp;team.</p>
                 <p class="purple-text"><span>4+&nbsp;millions</span><br>
                     organizations are already using&nbsp;Bitrix24</p>
             </div>
@@ -74,28 +78,50 @@
 
     <div class="section offers">
         <h2>What we offer</h2>
-        <div class="offers-cont horiz-container">
-            <div class="screens vert-container">
+
+        <div class="offers-cont horiz-container" id="offers-desktop">
+            <div class="screens vert-container" >
                 <img id="screen_1" src="../dist/images/screen_6.png">
                 <img id="screen_2" src="../dist/images/screen_4.png">
                 <img id="screen_3" src="../dist/images/screen_2.png">
             </div>
             <div class="texts vert-container">
                 <div class="offer-descr">
-                    <a class="purple-text">Development <span class="open-descr">+</span><span class="close-descr">–</span></a>
-                    <p class="black-text" id="offer-1">Creating and tuning <nobr>business-processes</nobr>, developing applications,
+                    <a class="purple-text" id="offer-1">Development <span class="open-descr">+</span><span class="close-descr">–</span></a>
+                    <p class="black-text" id="descr-1">Creating and tuning <nobr>business-processes</nobr>, developing applications,
                         connecting Bitrix24 (both cloud and box versions) with any ERP, CRM,&nbsp;BI&nbsp;systems.</p>
                 </div>
                 <div class="offer-descr">
-                    <a class="purple-text">Customization <span class="open-descr">+</span><span class="close-descr">–</span></a>
-                    <p class="black-text" id="offer-2">We&nbsp;customize Self hosted Bitrix24 moduls for any needs of&nbsp;your&nbsp;company.</p>
+                    <a class="purple-text" id="offer-2">Customization <span class="open-descr">+</span><span class="close-descr">–</span></a>
+                    <p class="black-text" id="descr-2">We&nbsp;customize Self hosted Bitrix24 moduls for any needs of&nbsp;your&nbsp;company.</p>
                 </div>
                 <div class="offer-descr">
-                    <a class="purple-text">Integration <span class="open-descr">+</span><span class="close-descr">–</span></a>
-                    <p class="black-text" id="offer-3">We&nbsp;surely can integrate any application&rsquo;s API with&nbsp;Bitrix24.</p>
+                    <a class="purple-text" id="offer-3">Integration <span class="open-descr">+</span><span class="close-descr">–</span></a>
+                    <p class="black-text" id="descr-3">We&nbsp;surely can integrate any application&rsquo;s API with&nbsp;Bitrix24.</p>
                 </div>
             </div>
+        </div>
 
+        <div class="offers-cont horiz-container" id="offers-mob">
+                <div class="offer-descr">
+                    <a class="purple-text active" id="mob-offer-1">Development <span class="open-descr">+</span><span class="close-descr">–</span></a>
+                    <p class="black-text" id="mob-descr-1">Creating and tuning <nobr>business-processes</nobr>, developing applications,
+                        connecting Bitrix24 (both cloud and box versions) with any ERP, CRM,&nbsp;BI&nbsp;systems.<br>
+                    <img class="inner-screen" id="in-screen_1" src="../dist/images/screen_6.png">
+                    </p>
+                </div>
+                <div class="offer-descr">
+                    <a class="purple-text" id="mob-offer-2">Customization <span class="open-descr">+</span><span class="close-descr">–</span></a>
+                    <p class="black-text" id="mob-descr-2">We&nbsp;customize Self hosted Bitrix24 moduls for any needs of&nbsp;your&nbsp;company.<br>
+                    <img class="inner-screen" id="in-screen_2" src="../dist/images/screen_4.png">
+                    </p>
+                </div>
+                <div class="offer-descr">
+                    <a class="purple-text" id="mob-offer-3">Integration <span class="open-descr">+</span><span class="close-descr">–</span></a>
+                    <p class="black-text" id="mob-descr-3">We&nbsp;surely can integrate any application&rsquo;s API with&nbsp;Bitrix24.<br>
+                    <img class="inner-screen" id="in-screen_3" src="../dist/images/screen_2.png">
+                    </p>
+                </div>
         </div>
 
     </div>
