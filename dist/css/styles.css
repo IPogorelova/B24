@@ -1,0 +1,1437 @@
+
+
+
+
+/* Fonts
+@font-face {
+    font-family: 'Roboto';
+    url('fonts/Roboto/Roboto-Black.ttf') format('truetype'),
+    url('fonts/Roboto/Roboto-Bold.ttf') format('truetype'),
+    url('fonts/Roboto/Roboto-Medium.ttf') format('truetype'),
+    url('fonts/Roboto/Roboto-Regular.ttf') format('truetype'),
+    url('fonts/Roboto/Roboto-Light.ttf') format('truetype'),
+    url('fonts/Roboto/Roboto-Thin.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto Mono';
+url('fonts/Roboto_Mono/RobotoMono-Bold.ttf') format('truetype'),
+url('fonts/Roboto_Mono/RobotoMono-Medium.ttf') format('truetype'),
+url('fonts/Roboto_Mono/RobotoMono-Regular.ttf') format('truetype'),
+url('fonts/Roboto_Mono/RobotoMono-Light.ttf') format('truetype'),
+url('fonts/Roboto_Mono/RobotoMono-Thin.ttf') format('truetype');
+}*/
+
+
+
+/*======== General settings =========*/
+
+
+
+BODY {
+    background-color: #fff;
+}
+
+
+
+#bg-under_1920 {
+    height: 1200px;
+}
+
+
+
+#bg-under_1024 {
+    display: none;
+}
+
+
+
+#bg-above_320 {
+    display: none;
+}
+
+
+
+#bg-under_320 {
+    display: none;
+}
+
+
+
+.bg-image {
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+
+
+.wrapper {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+    overflow-x: hidden;
+
+}
+
+
+
+.content {
+    flex: 1 0 auto;
+}
+
+
+
+.inner {
+    width: 90%;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: visible;
+}
+
+
+
+ul li {
+    list-style: none;
+}
+
+
+
+img {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+
+
+a, h1, h2 {
+    font-family: 'Roboto Mono', monospace;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.11;
+    letter-spacing: normal;
+}
+
+
+
+p, span {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: 0.5px;
+}
+
+
+
+.purple-text {
+    color: #2611c9;
+}
+
+
+
+.black-text {
+    font-size: 16px;
+    line-height: 1.38;
+    letter-spacing: normal;
+    color: #1e2048;
+}
+
+
+
+.blue-text {
+    font-family: Roboto-Light, sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: 0.5px;
+    color: #023753;
+}
+
+
+
+input, textarea {
+    outline: none;
+    resize: none;
+}
+
+
+
+#bg-bott-1920,
+#bg-bott-1440,
+#bg-bott-768,
+#bg-bott-320 {
+    display: none;
+    width: 100%;
+    height: 100%;
+    max-height: 705px;
+    position: absolute;
+    z-index: -1;
+}
+
+
+
+/*========== Header ==========*/
+
+
+
+.top-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5%;
+}
+
+
+
+.menu-top {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin-top: 9px;
+}
+
+
+
+.menu-top ul {
+        margin-left: -1.5%;
+        margin-right: -1.5%;
+    }
+
+
+
+.menu-top a {
+        margin: auto;
+    }
+
+
+
+.menu-mob-cont {
+    display: none;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+
+#menu-icon,
+#menu-icon::before,
+#menu-icon::after {
+    background-color: #fff;
+    position: absolute;
+    width: 25px;
+    height: 1px;
+}
+
+
+
+#menu-icon {
+    top: 40px;
+    right: 25px;
+}
+
+
+
+#menu-icon::before {
+    content: '';
+    top: -9px;
+}
+
+
+
+#menu-icon::after {
+    content: '';
+    top: 9px;
+}
+
+
+
+.horiz-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.vert-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+}
+
+
+
+.main-title {
+    margin-top: 25%;
+    margin-bottom: 28%;
+    font-size: 65px;
+    font-weight: 500;
+    line-height: 1.23;
+}
+
+
+
+#mouse-logo {
+    position: relative;
+    top: -119px;
+}
+
+
+
+#people-img {
+    width: 40%;
+    margin-top: 4%;
+}
+
+
+
+/*========== What is Bitrix24? ==========*/
+
+
+
+.about {
+    margin-bottom: 15%;
+}
+
+
+
+.about .vert-container {
+        margin-top: 19%;
+    }
+
+
+
+.about .vert-container img {
+            max-width: 120%;
+            margin-bottom: -14%;
+            margin-left: -4%;
+        }
+
+
+
+.about h2 {
+        margin-top: 7%;
+        font-size: 50px;
+        line-height: normal;
+        color: #1e2048;
+    }
+
+
+
+.about .blue-text {
+        max-width: 580px;
+        margin-top: 4%;
+    }
+
+
+
+.about .purple-text {
+        margin-top: 11%;
+        font-size: 30px;
+    }
+
+
+
+.about .purple-text span {
+            font-size: 40px;
+            line-height: 1;
+        }
+
+
+
+/*===== What we offer =====*/
+
+
+
+.offers {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 6%;
+}
+
+
+
+.offers h2 {
+        margin-bottom: 4%;
+        font-size: 50px;
+        line-height: normal;
+        text-align: center;
+        color: #1e2048;
+    }
+
+
+
+.offers .offers-cont {
+        display: flex;
+    }
+
+
+
+.offers .offers-cont .screens {
+            width: 59%;
+
+        }
+
+
+
+.offers .offers-cont .screens img {
+                display: none;
+                margin: -20px;
+            }
+
+
+
+.offers .offers-cont img:first-child {
+            display: block;
+        }
+
+
+
+.offers .offers-cont .texts {
+            width: 45%;
+            height: -webkit-fit-content;
+            height: -moz-fit-content;
+            height: fit-content;
+        }
+
+
+
+.offers .offers-cont .texts .offer-descr {
+                width: 80%;
+                padding-bottom: 5%;
+                margin-bottom: 5%;
+                border-bottom: solid 1px rgba(38, 17, 201, 0.2);
+            }
+
+
+
+.offers .offers-cont .texts a {
+                font-size: 22px;
+                font-stretch: normal;
+                line-height: 1.32;
+                letter-spacing: -0.8px;
+            }
+
+
+
+.offers .offers-cont .texts a span {
+                    font-size: 22px;
+                }
+
+
+
+.offers .offers-cont .texts a .close-descr {
+                    display: none;
+                }
+
+
+
+.offers .offers-cont .texts p {
+                display: none;
+                margin-top: 15px;
+                font-family: Roboto-Light, sans-serif;
+                font-size: 16px;
+                line-height: 1.38;
+                letter-spacing: normal;
+            }
+
+
+
+/*========== Our advantages ==========*/
+
+
+
+.advantages {
+    /*background: url(../../dist/images/bg-bottom_1920.svg) no-repeat bottom;
+    background-size: 100%;*/
+    max-height: 705px;
+    width: 100%;
+}
+
+
+
+.advantages #bg-bott-1920 {
+        display: block;
+    }
+
+
+
+.advantages h2 {
+        margin-top: 14%;
+        margin-bottom: 7%;
+        font-size: 50px;
+        line-height: normal;
+        text-align: center;
+        color: #1e2048;
+    }
+
+
+
+.advantages .advantages-cont {
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 12%;
+
+    }
+
+
+
+.advantages .advantages-cont div {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: space-between;
+            min-width: 235px;
+            height: 179px;
+
+        }
+
+
+
+.advantages .advantages-cont div img {
+                height: -webkit-fit-content;
+                height: -moz-fit-content;
+                height: fit-content;
+                margin: auto auto 20px auto;
+            }
+
+
+
+.advantages .advantages-cont div p {
+                font-family: Roboto-Light, sans-serif;
+                font-size: 25px;
+                line-height: 1.28;
+                letter-spacing: 1px;
+                text-align: center;
+            }
+
+
+
+/*========== Footer ==========*/
+
+
+
+footer {
+    width: 100%;
+    background-color: #2611c9;
+    color: #fff
+}
+
+
+
+footer  * {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+footer h2 {
+        font-size: 50px;
+        text-align: center;
+        margin-top: 100px;
+        margin-bottom: 50px;
+}
+
+
+
+footer form * {
+        display: block;
+        background-color: #2611c9;
+        border-color: #fff;
+        color: #ffffff;
+}
+
+
+
+footer .form-field {
+        width: 500px;
+        padding: 30px 17px;
+        font-size: 20px;
+        margin-bottom: 25px;
+}
+
+
+
+footer input {
+        height: 80px;
+        border: 1px solid;
+}
+
+
+
+footer textarea {
+        height: 180px;
+}
+
+
+
+footer input::-webkit-input-placeholder,
+    footer textarea::-webkit-input-placeholder {
+        font-family: Roboto-Light, sans-serif;
+        font-size: 20px;
+        font-style: normal;
+        font-stretch: normal;
+        letter-spacing: normal;
+        color: #ffffff;
+}
+
+
+
+footer input:-ms-input-placeholder,
+    footer textarea:-ms-input-placeholder {
+        font-family: Roboto-Light, sans-serif;
+        font-size: 20px;
+        font-style: normal;
+        font-stretch: normal;
+        letter-spacing: normal;
+        color: #ffffff;
+}
+
+
+
+footer input::-ms-input-placeholder,
+    footer textarea::-ms-input-placeholder {
+        font-family: Roboto-Light, sans-serif;
+        font-size: 20px;
+        font-style: normal;
+        font-stretch: normal;
+        letter-spacing: normal;
+        color: #ffffff;
+}
+
+
+
+footer input::placeholder,
+    footer textarea::placeholder {
+        font-family: Roboto-Light, sans-serif;
+        font-size: 20px;
+        font-style: normal;
+        font-stretch: normal;
+        letter-spacing: normal;
+        color: #ffffff;
+}
+
+
+
+/* Customize the label (the container)*/
+
+
+
+footer .cb-cont {
+        display: block;
+        position: relative;
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 12px;
+        padding-left: 35px;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        font-family: Roboto, sans-serif;
+        font-size: 12px;
+        line-height: 1.33;
+}
+
+
+
+footer .cb-cont a {
+            display: inline;
+            font-family: Roboto, sans-serif;
+            font-weight: 600;
+        }
+
+
+
+/* Hide the browser's default checkbox*/
+
+
+
+footer .cb-cont input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+}
+
+
+
+/* Create a custom checkbox*/
+
+
+
+footer .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 25px;
+        width: 25px;
+        background-color: #2611c9;
+        border: 1px solid #ffffff;
+        border-radius: 2px;
+}
+
+
+
+/* Create the checkmark/indicator (hidden when not checked)*/
+
+
+
+footer .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+}
+
+
+
+/* Show the checkmark when checked*/
+
+
+
+footer .cb-cont input:checked ~ .checkmark:after {
+        display: block;
+}
+
+
+
+/* Style the checkmark/indicator*/
+
+
+
+footer .cb-cont .checkmark:after {
+        left: 9px;
+        top: 2px;
+        width: 6px;
+        height: 17px;
+        border: solid white;
+        border-width: 0 1px 1px 0;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+}
+
+
+
+footer .submit-btn {
+        display: flex;
+        justify-content: center;
+        width: 190px;
+        height: 65px;
+        margin-top: 4%;
+        margin-bottom: 9%;
+        background-color: #00b9ed;
+        border: none;
+        border-radius: 2px;
+
+        font-family: RobotoMono, monospace;
+        font-size: 25px;
+        font-weight: 500;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1;
+        letter-spacing: 2px;
+        color: #ffffff;
+}
+
+
+
+footer .submit-btn:hover {
+        background-color: #53D5F9;
+}
+
+
+
+/*========== Adaptive ==========*/
+
+
+
+@media screen and (min-width: 320px) and (max-width: 649px) {
+
+    /*===== Header =====*/
+
+    #bg-above_320 {
+        display: block;
+        max-height: 455px;
+    }
+
+    #bg-under_1920 {
+        display: none;
+    }
+
+    #bg-under_320 {
+        display: block;
+        height: 522px;
+    }
+
+    #mouse-logo {
+        display: none;
+    }
+
+    .inner {
+        width: 94%;
+    }
+
+    .top-container {
+        width: 44%;
+        margin-top: 5%;
+    }
+
+    .menu-top {
+        display: none;
+    }
+
+    #menu-icon {
+        top: 23px;
+        right: 15px;
+    }
+
+    .menu-mob {
+        margin-top: 13%;
+        margin-left: 16%;
+    }
+
+        .menu-mob li {
+            margin-bottom: 15%;
+            font-size: 25px;
+        }
+
+    .horiz-container {
+        flex-direction: column;
+    }
+
+    .vert-container {
+        width: 100%;
+    }
+
+    .title-block {
+        align-self: flex-start;
+        text-align: center;
+    }
+
+    #people-img {
+        align-self: flex-end;
+        align-content: center;
+        width: 55%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10%;
+    }
+
+    .main-title {
+        max-width: 615px;
+        font-size: 25px;
+        margin-top: 12%;
+        margin-bottom: 0;
+    }
+
+
+
+/*===== What is B24? =====*/
+
+        .about h2 {
+            margin-top: 0;
+            font-size: 25px;
+        }
+
+        .about .horiz-container {
+            flex-direction: column;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+            .about .horiz-container .vert-container {
+                width: 100%;
+                align-self: center;
+            }
+
+                .about .horiz-container .vert-container img {
+                    width: 96%;
+                    align-self: center;
+                    margin-bottom: 0;
+                    margin-left: 0;
+                    position: relative;
+                    bottom: 110px;
+                    max-width: 697px;
+                }
+
+                .about .horiz-container .vert-container .blue-text {
+                    max-width: none;
+                    font-size: 16px;
+                }
+
+                .about .horiz-container .vert-container .purple-text {
+                    position: relative;
+                    top: 190px;
+                    font-size: 16px;
+                }
+
+                    .about .horiz-container .vert-container .purple-text span {
+                        font-size: 20px;
+                    }
+
+
+/*===== Our advantages =====*/
+
+    .advantages {
+        max-height: none;
+    }
+
+        .advantages h2 {
+            margin-bottom: 11%;
+            font-size: 25px;
+        }
+
+        .advantages #bg-bott-1920 {
+            display: none;
+        }
+
+        .advantages #bg-bott-320 {
+            display: block;
+            height: 1200px;
+            max-height: none;
+        }
+
+        .advantages .advantages-cont {
+            flex-direction: column;
+            width: 100%;
+        }
+
+            .advantages .advantages-cont div {
+                margin-bottom: 35px;
+            }
+
+
+/*========== Footer ==========*/
+
+        footer h2 {
+            margin-top: 50px;
+            font-size: 25px;
+        }
+
+        footer .form-field, footer .checkbox {
+            width: 280px;
+        }
+
+        footer .checkbox {
+            margin-bottom: 6%;
+        }
+
+        footer .submit-btn {
+            margin-top: 10%;
+            margin-bottom: 25%;
+        }
+
+        footer .cb-cont {
+            max-width: 280px;
+        }
+
+}
+
+
+
+@media screen and (min-width: 650px) and (max-width: 1023px) {
+
+    /*===== Header =====*/
+
+    #bg-above_768 {
+        display: block;
+        max-height: 760px;
+    }
+
+    #bg-under_1920 {
+        display: none;
+    }
+
+    #bg-under_1024 {
+        display: block;
+        height: 885px;
+    }
+
+    .inner {
+        width: 94%;
+    }
+
+    .top-container {
+        margin-top: 3%;
+    }
+
+    .menu-top {
+        display: none;
+    }
+
+    .menu-mob {
+        margin-top: 13%;
+        margin-left: 16%;
+    }
+
+        .menu-mob li {
+            margin-bottom: 15%;
+            font-size: 25px;
+        }
+
+    .menu-mob-cont img {
+        display: none;
+    }
+
+    #mouse-logo {
+        display: none;
+    }
+
+    .horiz-container {
+        flex-direction: column;
+    }
+
+    .vert-container {
+        width: 85%;
+    }
+
+    .title-block {
+        align-self: flex-start;
+    }
+
+    #people-img {
+        align-self: flex-end;
+        width: 50%;
+    }
+
+    .main-title {
+        max-width: 615px;
+        font-size: 50px;
+        margin-top: 6%;
+        margin-bottom: -19%;
+    }
+
+
+
+
+/*===== What is B24? =====*/
+
+        .about h2 {
+            margin-top: 0;
+        }
+
+        .about .horiz-container {
+            flex-direction: column;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+            .about .horiz-container .vert-container {
+                width: 100%;
+                align-self: center;
+            }
+
+                .about .horiz-container .vert-container img {
+                    width: 96%;
+                    align-self: center;
+                    margin-bottom: 0;
+                    margin-left: 0;
+                    position: relative;
+                    bottom: 235px;
+                    max-width: 697px;
+                }
+
+                .about .horiz-container .vert-container .blue-text {
+                    max-width: none;
+                    font-size: 25px;
+                }
+
+                .about .horiz-container .vert-container .purple-text {
+                    position: relative;
+                    top: 465px;
+                }
+
+
+/*===== Our advantages =====*/
+
+        .advantages #bg-bott-1920 {
+            display: none;
+        }
+
+        .advantages #bg-bott-768 {
+            display: block;
+        }
+
+        .advantages .advantages-cont {
+            flex-wrap: wrap;
+            justify-content: space-around;
+            width: 73%;
+        }
+
+            .advantages .advantages-cont div {
+                margin-bottom: 35px;
+            }
+
+
+/*========== Footer ==========*/
+
+        footer h2 {
+            margin-top: 80px;
+        }
+}
+
+
+
+@media screen and (min-width: 1024px) and (max-width: 1300px) {
+
+    /*===== Header =====*/
+
+    #bg-above_1440 {
+        display: block;
+        max-height: 1000px;
+    }
+
+    #bg-under_1920 {
+        display: none;
+    }
+
+    #bg-under_1024 {
+        display: block;
+        height: 825px;
+    }
+
+    #menu-icon,
+    #menu-icon:before,
+    #menu-icon:after {
+        display: none;
+    }
+
+    .title-block {
+        width: 60%;
+    }
+
+        .title-block .main-title {
+            font-size: 50px;
+        }
+
+    #people-img {
+        margin-top: 13%;
+    }
+
+
+
+/*===== What is B24? =====*/
+
+        .about .horiz-container {
+            flex-direction: column;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+            .about .horiz-container .vert-container {
+                width: 80%;
+                align-self: center;
+            }
+
+                .about .horiz-container .vert-container img {
+                    width: 96%;
+                    align-self: center;
+                    margin-bottom: 0;
+                    margin-left: auto;
+                    position: relative;
+                    bottom: 300px;
+                }
+
+                .about .horiz-container .vert-container .blue-text {
+                    max-width: none;
+                }
+
+                .about .horiz-container .vert-container .purple-text {
+                    position: relative;
+                    top: 465px;
+                }
+
+
+/*===== Our advantages =====*/
+
+        .advantages #bg-bott-1920 {
+            display: none;
+        }
+
+        .advantages #bg-bott-1440 {
+            display: block;
+        }
+
+        .advantages .advantages-cont {
+            width: 100%;
+        }
+
+        .advantages #tools {
+            min-width: 130px;
+        }
+
+
+/*========== Footer ==========*/
+
+        footer h2 {
+            margin-top: 80px;
+        }
+
+}
+
+
+
+@media screen and (min-width: 1125px) {
+
+    /*===== Header =====*/
+
+    #bg-under_1024 {
+        display: none;
+    }
+
+    #bg-under_1920 {
+        display: block;
+        height: 981px;
+    }
+
+}
+
+
+
+@media screen and (min-width: 1301px) and (max-width: 1439px) {
+
+    /*===== Header =====*/
+
+    #bg-above_1440 {
+        display: block;
+        max-height: 1000px;
+    }
+
+    #bg-under_1920 {
+        height: 1100px;
+    }
+
+    #menu-icon,
+    #menu-icon:before,
+    #menu-icon:after {
+        display: none;
+    }
+
+    .title-block {
+        width: 56%;
+    }
+
+    #people-img {
+        margin-top: 13%;
+    }
+
+
+
+    /*===== What is B24? =====*/
+
+        .about .horiz-container {
+            flex-direction: column;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+            .about .horiz-container .vert-container {
+                width: 60%;
+                align-self: center;
+            }
+
+                .about .horiz-container .vert-container img {
+                    margin-bottom: 0;
+                    position: relative;
+                    bottom: 350px;
+                }
+
+                .about .horiz-container .vert-container .blue-text {
+                    max-width: none;
+                }
+
+                .about .horiz-container .vert-container .purple-text {
+                    position: relative;
+                    top: 510px;
+                }
+
+
+    /*===== Our advantages =====*/
+
+        .advantages #bg-bott-1920 {
+            display: none;
+        }
+
+        .advantages #bg-bott-1440 {
+            display: block;
+        }
+
+        .advantages #tools {
+            min-width: 130px;
+        }
+}
+
+
+
+@media screen and (min-width: 1440px) and (max-width: 1640px) {
+
+/*===== Header =====*/
+
+    #bg-above_1440 {
+        display: block;
+        max-height: 1000px;
+    }
+
+    #bg-under_1920 {
+        min-height: 1200px;
+    }
+
+    #menu-icon,
+    #menu-icon:before,
+    #menu-icon:after {
+        display: none;
+    }
+
+    .title-block {
+        width: 55%;
+    }
+
+    #people-img {
+        margin-top: 13%;
+    }
+
+
+
+
+/*===== What is B24? =====*/
+
+    .about .vert-container img {
+        max-width: 115%;
+        margin-bottom: -14%;
+        margin-left: -10%;
+    }
+
+
+/*===== Our advantages =====*/
+
+        .advantages #bg-bott-1920 {
+            display: none;
+        }
+
+        .advantages #bg-bott-1440 {
+            display: block;
+        }
+
+        .advantages #tools {
+            min-width: 130px;
+        }
+
+}
+
+
+
+@media screen and (min-width: 1641px) and (max-width: 1919px) {
+
+    /*===== Header =====*/
+
+    #bg-above_1920 {
+        display: block;
+        max-height: 1000px;
+    }
+
+    #bg-under_1920 {
+        min-height: 1200px;
+    }
+
+    #menu-icon,
+    #menu-icon:before,
+    #menu-icon:after {
+        display: none;
+    }
+
+    #tools {
+        min-width: 130px;
+    }
+
+}
+
+
+
+@media screen and (min-width: 1920px) and (max-width: 2000px) {
+
+    /*===== Header =====*/
+
+    #bg-above_1920 {
+        display: block;
+        max-height: 1000px;
+    }
+
+    #bg-under_1920 {
+        min-height: 1120px;
+    }
+
+    #menu-icon,
+    #menu-icon:before,
+    #menu-icon:after {
+        display: none;
+    }
+
+    #people-img {
+        margin-top: 7%;
+    }
+
+    #tools {
+        min-width: 130px;
+    }
+
+}
+
+
+
+@media screen and (min-width: 2001px) {
+
+    /*===== Header =====*/
+
+    #bg-above_1920 {
+        display: block;
+        max-height: 1000px;
+    }
+
+    #bg-under_1920 {
+        min-height: 1200px;
+    }
+
+    #menu-icon,
+    #menu-icon:before,
+    #menu-icon:after {
+        display: none;
+    }
+
+    #people-img {
+        margin-top: 11%;
+    }
+
+    #tools {
+        min-width: 130px;
+    }
+
+}
+
+
+/*# sourceMappingURL=styles.css.map */
